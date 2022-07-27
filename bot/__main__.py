@@ -49,14 +49,14 @@ def stats(update, context):
 
 def start(update, context):
     buttons = ButtonMaker()
-    buttons.buildbutton("★Repo", "https://github.com/woodcraft5/mirror-leech-bot")
-    buttons.buildbutton("★Group", "https://t.me/+mmlX62hc9M43YjI1")
-    buttons.buildbutton("★Channel", "https://t.me/woodcraft_repo")
-    buttons.buildbutton("★Owner", "https://t.me/woodcraft5")
+    buttons.buildbutton("Sledger", "www.google.com")
+    buttons.buildbutton("Cloud", "www.google.com")
+    buttons.buildbutton("Offcial", "www.google.com")
+    buttons.buildbutton("Group", "www.google.com")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
-Welcome | WOODcraft service is ready for you
+Welcome | Sledger Cloud is ready for you
 Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
         sendMarkup(start_string, context.bot, update.message, reply_markup)
