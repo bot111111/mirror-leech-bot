@@ -1,4 +1,4 @@
-FROM woodcraftbot/mltb:heroku
+FROM mirror-leech-bot/mltb:heroku
 
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
